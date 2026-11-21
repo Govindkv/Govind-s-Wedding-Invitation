@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#861d3a">
+  <meta name="theme-color" content="#173d73">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="mobile-web-app-capable" content="yes">
@@ -14,13 +14,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --wine: #861d3a;
-      --wine2: #c54850;
-      --gold: #e8c77a;
+      --royal: #173d73;
+      --gold: #ffd76a;
       --cream: #fff8ee;
-      --ink: #482d38;
-      --muted: #f0dadd;
-      --rose: #d78388;
+      --ink: #25344d;
+      --muted: #e1eaf7;
+      --sky: #83b9f1;
       --paper: #fffcf6;
       --body-muted: #77656d;
       --line: #e8dccf
@@ -39,7 +38,7 @@
     body {
       margin: 0;
       min-width: 320px;
-      background: var(--wine);
+      background: var(--royal);
       font-family: "Cormorant Garamond", "Palatino Linotype", "Book Antiqua", Georgia, serif;
       -webkit-tap-highlight-color: transparent
     }
@@ -57,7 +56,7 @@
 
     .shell {
       overflow: hidden;
-      background: radial-gradient(ellipse at 10% 12%, #d56a68 0, transparent 38%), radial-gradient(ellipse at 92% 78%, #b83b4e 0, transparent 34%), linear-gradient(145deg, #c44a50, #92213f 58%, #5d1732);
+      background: radial-gradient(ellipse at 10% 12%, #72b5ff 0, transparent 38%), radial-gradient(ellipse at 92% 78%, #3676c4 0, transparent 34%), linear-gradient(145deg, #3979bd, #1b477d 58%, #102746);
       color: var(--cream);
       min-height: 100svh;
       padding-bottom: env(safe-area-inset-bottom)
@@ -197,7 +196,7 @@
       margin: 0 auto 15px;
       color: #f4e3bf;
       font: 400 12px/1.65 "Nirmala UI", "Noto Serif Devanagari", serif;
-      text-shadow: 0 1px 5px #5d173266
+      text-shadow: 0 1px 5px #10274666
     }
 
     .monogram-wrap {
@@ -303,7 +302,7 @@
       font-style: normal;
       vertical-align: .02em;
       margin: 0 1px;
-      text-shadow: 0 0 14px #f4d791aa, 0 1px 3px #57152288
+      text-shadow: 0 0 14px #ffe58faa, 0 1px 3px #10274688
     }
 
     .couple-name {
@@ -311,7 +310,7 @@
       z-index: 1;
       color: var(--cream);
       -webkit-text-stroke: .25px #fffaf0;
-      text-shadow: 0 2px 2px #57152288, 0 0 8px #f4d791bb, 0 0 17px #f4d79166
+      text-shadow: 0 2px 2px #10274688, 0 0 8px #ffe58fdd, 0 0 20px #ffe58f99
     }
 
     .name-alias {
@@ -332,7 +331,7 @@
       width: fit-content;
       margin: 9px auto 6px;
       font: 46px/1 "Great Vibes", "Brush Script MT", cursive;
-      color: var(--wine)
+      color: var(--royal)
     }
 
     .romantic-pair {
@@ -465,7 +464,7 @@
       top: 5px;
       height: 116px;
       background: var(--cream);
-      color: var(--wine);
+      color: var(--royal);
       display: grid;
       place-items: center;
       font: 500 31px/1 "Cormorant Garamond", Georgia, serif;
@@ -498,11 +497,11 @@
       height: 56px;
       border-radius: 50%;
       border: 1px solid #f4d791;
-      background: radial-gradient(circle at 34% 26%, #dc7370, #9e2946 72%);
+      background: radial-gradient(circle at 34% 26%, #78b9fa, #225998 72%);
       display: grid;
       place-items: center;
       color: var(--cream);
-      box-shadow: 0 2px 8px #57152266, inset 0 0 0 3px #ffffff18
+      box-shadow: 0 2px 12px #10274666, inset 0 0 0 3px #ffffff28
     }
 
     .seal:before {
@@ -647,7 +646,7 @@
       display: grid;
       place-items: center;
       margin: auto;
-      color: #8d6960;
+      color: #5b6e88;
       font-style: italic;
       font: 500 22px "Cormorant Garamond", Georgia, serif
     }
@@ -655,7 +654,7 @@
     .person h3 {
       font: 46px/1 "Great Vibes", "Brush Script MT", cursive;
       margin: 9px 0 6px;
-      color: var(--wine)
+      color: var(--royal)
     }
 
     .person p {
@@ -680,7 +679,7 @@
     .person-meta span {
       display: block;
       margin-bottom: 3px;
-      color: #9b625c;
+      color: #5b6e88;
       font: 500 7px/1.4 "Montserrat", Arial, sans-serif;
       letter-spacing: 1.2px
     }
@@ -741,7 +740,7 @@
       font-size: 23px;
       font-weight: 400;
       line-height: 1.4;
-      color: var(--wine)
+      color: var(--royal)
     }
 
     .tile span {
@@ -827,10 +826,10 @@
       position: relative;
       padding: 19px 58px 19px 20px;
       border: 1px solid var(--line);
-      border-left: 3px solid var(--rose);
+      border-left: 3px solid var(--sky);
       border-radius: 10px;
       background: var(--paper);
-      box-shadow: 0 8px 24px #571b2c0d;
+      box-shadow: 0 8px 24px #173d7314;
       counter-increment: celebration
     }
 
@@ -846,7 +845,7 @@
       border: 1px solid #b89a5b;
       border-radius: 50%;
       background: var(--cream);
-      color: var(--wine);
+      color: var(--royal);
       font: 500 9px "Montserrat", Arial, sans-serif;
       letter-spacing: .3px
     }
@@ -894,7 +893,7 @@
 
     .function-title {
       margin: 0;
-      color: var(--wine);
+      color: var(--royal);
       font: 600 23px/1.5 "Nirmala UI", "Noto Serif Devanagari", serif
     }
 
@@ -913,7 +912,7 @@
 
     .invitation-close {
       position: relative;
-      background: radial-gradient(ellipse at 10% 12%, #bc4a54 0, transparent 38%), linear-gradient(155deg, #90233e, #5d1732);
+      background: radial-gradient(ellipse at 10% 12%, #72b5ff 0, transparent 38%), linear-gradient(155deg, #245d9c, #102746);
       color: var(--cream)
     }
 
@@ -949,7 +948,7 @@
 
     .closing-card h3 {
       margin: 0 0 8px;
-      color: var(--wine);
+      color: var(--royal);
       font: 500 28px/1.2 "Cormorant Garamond", Georgia, serif
     }
 
@@ -986,19 +985,19 @@
       display: grid;
       gap: 9px;
       margin-top: 21px;
-      color: var(--wine);
+      color: var(--royal);
       font: 500 13px/1.7 "Cormorant Garamond", Georgia, serif
     }
 
     .closing-families span {
-      color: #946765;
+      color: #5b6e88;
       font: italic 15px "Cormorant Garamond", Georgia, serif
     }
 
     .closing-names {
       display: block;
       margin-top: 18px;
-      color: var(--wine);
+      color: var(--royal);
       font-size: 38px;
       line-height: 1
     }
@@ -1012,7 +1011,7 @@
     .invitation-close .rsvp-card {
       width: min(100%, 520px);
       margin-top: 26px;
-      background: linear-gradient(155deg, #b04755, #852541 65%, #5c1a34);
+      background: linear-gradient(155deg, #3278b8, #1b4c82 65%, #102d54);
       box-shadow: 0 16px 42px #290b1833
     }
 
@@ -1035,14 +1034,14 @@
 
     .unit b {
       display: block;
-      color: var(--wine);
+      color: var(--royal);
       font-size: 25px;
       font-weight: 400
     }
 
     .unit small {
       font: 500 8px "Montserrat", Arial, sans-serif;
-      color: #946765;
+      color: #5b6e88;
       text-transform: uppercase
     }
 
@@ -1093,7 +1092,7 @@
 
     .choice.selected {
       background: #e8c77a;
-      color: #571b2c
+      color: #17304f
     }
 
     .fields {
@@ -1122,7 +1121,7 @@
       border: 1px solid #b89a5b;
       border-radius: 8px;
       background: #fffaf0;
-      color: #571b2c;
+      color: #17304f;
       font-size: 14px
     }
 
@@ -1151,7 +1150,7 @@
       height: 48px;
       border-radius: 50%;
       background: #e8c77a;
-      color: #571b2c;
+      color: #17304f;
       display: grid;
       place-items: center;
       margin: auto;
@@ -1247,7 +1246,7 @@
       top: -24px;
       color: var(--petal-color, #e8c77a);
       opacity: 0;
-      text-shadow: 0 1px 5px #54172455;
+      text-shadow: 0 1px 5px #10274655;
       animation: petal-fall var(--fall-duration, 9s) linear forwards
     }
 
@@ -1418,7 +1417,7 @@
           <p class="intro">Please join us as we celebrate our wedding and the beginning of a beautiful new chapter.</p><a class="btn"
             href="#details">Explore invitation ↓</a>
         </div>
-        <div class="hero-bottom">22–26 NOVEMBER · BHOPAL</div>
+        <div class="hero-bottom">23–26 NOVEMBER · BHOPAL</div>
       </div>
     </section>
     <section class="section light" id="details">
@@ -1452,7 +1451,7 @@
             Taru as they begin a new chapter together.</p>
       </div>
       <div class="details reveal">
-          <div class="tile full"><small>GROOM'S FAMILY CELEBRATIONS</small><strong>22–26 November 2026</strong><span>Five days of auspicious ceremonies hosted by Govind's family</span></div>
+          <div class="tile full"><small>GROOM'S FAMILY CELEBRATIONS</small><strong>23–26 November 2026</strong><span>Four days of auspicious ceremonies hosted by Govind's family</span></div>
       </div>
       <div class="itinerary reveal" id="itinerary">
           <p class="eyebrow">Celebrations hosted by the groom's family</p>
@@ -1469,8 +1468,8 @@
               <span class="function-number">Groom's Family · Function 01</span>
               <h3 class="function-title" lang="hi">माता पूजन</h3>
               <p class="function-subtitle">Mata Pujan</p>
-              <p class="function-date">Sunday · 22 November 2026</p>
-              <span class="function-time">5:00 PM</span>
+              <p class="function-date">Monday · 23 November 2026</p>
+              <span class="function-time">3:00 PM</span>
             </article>
             <article class="function-card">
               <span class="function-icon" aria-hidden="true"><svg viewBox="0 0 36 36"><path d="M8 28h20M10 28V15h16v13M7 15l11-9 11 9M14 28v-8h8v8M6 32h24" /><path d="M18 6V3M15 5h6" /><circle cx="18" cy="12" r="1.5" /></svg></span>
@@ -1478,7 +1477,7 @@
               <h3 class="function-title" lang="hi">हल्दी एवं मेहंदी समारोह</h3>
               <p class="function-subtitle">Haldi &amp; Mehendi Ceremony</p>
               <p class="function-date">Monday · 23 November 2026</p>
-              <span class="function-time">6:00 PM</span>
+              <span class="function-time">7:00 PM</span>
             </article>
             <article class="function-card">
               <span class="function-icon" aria-hidden="true"><svg viewBox="0 0 36 36"><path d="M8 28h20M10 28V15h16v13M7 15l11-9 11 9M14 28v-8h8v8M6 32h24" /><path d="M18 6V3M15 5h6" /><circle cx="18" cy="12" r="1.5" /></svg></span>
@@ -1508,7 +1507,7 @@
       <div class="countdown reveal">
           <p class="eyebrow">Counting every moment</p>
           <h2>Until the celebrations begin</h2>
-          <p class="countdown-date">First celebration · 22 November · 5:00 PM</p>
+          <p class="countdown-date">First celebration · 23 November · 3:00 PM</p>
           <div class="countrow" id="countdown">
             <div class="unit"><b>--</b><small>Days</small></div>
             <div class="unit"><b>--</b><small>Hours</small></div>
@@ -1558,7 +1557,7 @@
     <footer class="footer"><b class="footer-names romantic-pair">Govind &amp; Taru</b>
       <p>With love, the Govind and Taru families</p>
       <div class="help-contact"><span>Need a hand on our special day?</span>Give us a call: <a href="tel:+917489048673">7489048673</a> · <a href="tel:+917697481755">7697481755</a></div>
-      <small>22–26 NOVEMBER · BHOPAL</small>
+      <small>23–26 NOVEMBER · BHOPAL</small>
     </footer>
   </main>
   <div class="page-ornament" aria-hidden="true">
@@ -1574,7 +1573,7 @@
       open.addEventListener("click", () => { document.body.classList.add("celebration-open"); open.classList.add("opening"); setTimeout(() => { area.hidden = true; hero.classList.add("show") }, 650) });
       const sections = document.querySelectorAll(".reveal");
       if ("IntersectionObserver" in window) { const io = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add("visible"); io.unobserve(e.target) } }), { threshold: .12 }); sections.forEach(s => io.observe(s)) } else sections.forEach(s => s.classList.add("visible"));
-      const celebrationDate = new Date("2026-11-22T17:00:00+05:30").getTime();
+      const celebrationDate = new Date("2026-11-23T15:00:00+05:30").getTime();
       function tick() {
         const remaining = Math.max(0, celebrationDate - Date.now());
         const values = [
@@ -1598,7 +1597,7 @@
           return;
         }
         const guests = $("guests")?.value || "0", song = $("song")?.value.trim() || "";
-        const payload = { name, phone: phone || "Not provided", response: choice === "accept" ? "Joyfully Accept" : "Regretfully Decline", guest_count: choice === "accept" ? guests : "0", song_request: song || "None", event: "Govind & Taru Wedding Celebrations — 22–26 November 2026", venue: "Beelkho, Bhopal, Madhya Pradesh", _subject: "New RSVP — Govind & Taru Wedding", _template: "table", _captcha: "false" };
+        const payload = { name, phone: phone || "Not provided", response: choice === "accept" ? "Joyfully Accept" : "Regretfully Decline", guest_count: choice === "accept" ? guests : "0", song_request: song || "None", event: "Govind & Taru Wedding Celebrations — 23–26 November 2026", venue: "Beelkho, Bhopal, Madhya Pradesh", _subject: "New RSVP — Govind & Taru Wedding", _template: "table", _captcha: "false" };
         const submit = $("submitRsvp"); submit.disabled = true; submit.textContent = "Sending…";
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), 90000);
@@ -1625,7 +1624,7 @@
           petal.style.fontSize = 14 + Math.random() * 12 + "px";
           petal.style.setProperty("--drift", `${Math.random() * 100 - 50}px`);
           petal.style.setProperty("--fall-duration", `${duration}s`);
-          petal.style.setProperty("--petal-color", Math.random() > .5 ? "#e8c77a" : "#df8990");
+          petal.style.setProperty("--petal-color", Math.random() > .5 ? "#ffd76a" : "#a8d1ff");
           document.body.appendChild(petal);
           setTimeout(() => petal.remove(), duration * 1000 + 300);
         }, 650);
