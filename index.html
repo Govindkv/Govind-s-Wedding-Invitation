@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
-  <meta name="theme-color" content="#173d73">
+  <meta name="theme-color" content="#a84312">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="mobile-web-app-capable" content="yes">
@@ -14,12 +14,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --royal: #173d73;
-      --gold: #ffd76a;
+      --saffron: #a84312;
+      --gold: #ffdf78;
       --cream: #fff8ee;
-      --ink: #25344d;
-      --muted: #e1eaf7;
-      --sky: #83b9f1;
+      --ink: #4b3023;
+      --muted: #f6e2d2;
+      --marigold: #f4a640;
       --paper: #fffcf6;
       --body-muted: #77656d;
       --line: #e8dccf
@@ -38,7 +38,7 @@
     body {
       margin: 0;
       min-width: 320px;
-      background: var(--royal);
+      background: var(--saffron);
       font-family: "Cormorant Garamond", "Palatino Linotype", "Book Antiqua", Georgia, serif;
       -webkit-tap-highlight-color: transparent
     }
@@ -56,7 +56,7 @@
 
     .shell {
       overflow: hidden;
-      background: radial-gradient(ellipse at 10% 12%, #72b5ff 0, transparent 38%), radial-gradient(ellipse at 92% 78%, #3676c4 0, transparent 34%), linear-gradient(145deg, #3979bd, #1b477d 58%, #102746);
+      background: radial-gradient(ellipse at 10% 12%, #ffd18a 0, transparent 38%), radial-gradient(ellipse at 92% 78%, #f08a32 0, transparent 34%), linear-gradient(145deg, #f3a342, #c45c1b 58%, #782d18);
       color: var(--cream);
       min-height: 100svh;
       padding-bottom: env(safe-area-inset-bottom)
@@ -196,7 +196,7 @@
       margin: 0 auto 15px;
       color: #f4e3bf;
       font: 400 12px/1.65 "Nirmala UI", "Noto Serif Devanagari", serif;
-      text-shadow: 0 1px 5px #10274666
+      text-shadow: 0 1px 5px #782d1866
     }
 
     .monogram-wrap {
@@ -302,7 +302,7 @@
       font-style: normal;
       vertical-align: .02em;
       margin: 0 1px;
-      text-shadow: 0 0 14px #ffe58faa, 0 1px 3px #10274688
+      text-shadow: 0 0 14px #ffe58faa, 0 1px 3px #782d1888
     }
 
     .couple-name {
@@ -310,7 +310,7 @@
       z-index: 1;
       color: var(--cream);
       -webkit-text-stroke: .25px #fffaf0;
-      text-shadow: 0 2px 2px #10274688, 0 0 8px #ffe58fdd, 0 0 20px #ffe58f99
+      text-shadow: 0 2px 2px #782d1888, 0 0 8px #ffe58fdd, 0 0 20px #ffe58f99
     }
 
     .name-alias {
@@ -331,7 +331,7 @@
       width: fit-content;
       margin: 9px auto 6px;
       font: 46px/1 "Great Vibes", "Brush Script MT", cursive;
-      color: var(--royal)
+      color: var(--saffron)
     }
 
     .romantic-pair {
@@ -464,7 +464,7 @@
       top: 5px;
       height: 116px;
       background: var(--cream);
-      color: var(--royal);
+      color: var(--saffron);
       display: grid;
       place-items: center;
       font: 500 31px/1 "Cormorant Garamond", Georgia, serif;
@@ -497,11 +497,11 @@
       height: 56px;
       border-radius: 50%;
       border: 1px solid #f4d791;
-      background: radial-gradient(circle at 34% 26%, #78b9fa, #225998 72%);
+      background: radial-gradient(circle at 34% 26%, #ffd28b, #b64b16 72%);
       display: grid;
       place-items: center;
       color: var(--cream);
-      box-shadow: 0 2px 12px #10274666, inset 0 0 0 3px #ffffff28
+      box-shadow: 0 2px 12px #782d1866, inset 0 0 0 3px #ffffff28
     }
 
     .seal:before {
@@ -646,7 +646,7 @@
       display: grid;
       place-items: center;
       margin: auto;
-      color: #5b6e88;
+      color: #8a604a;
       font-style: italic;
       font: 500 22px "Cormorant Garamond", Georgia, serif
     }
@@ -654,7 +654,7 @@
     .person h3 {
       font: 46px/1 "Great Vibes", "Brush Script MT", cursive;
       margin: 9px 0 6px;
-      color: var(--royal)
+      color: var(--saffron)
     }
 
     .person p {
@@ -679,7 +679,7 @@
     .person-meta span {
       display: block;
       margin-bottom: 3px;
-      color: #5b6e88;
+      color: #8a604a;
       font: 500 7px/1.4 "Montserrat", Arial, sans-serif;
       letter-spacing: 1.2px
     }
@@ -740,7 +740,7 @@
       font-size: 23px;
       font-weight: 400;
       line-height: 1.4;
-      color: var(--royal)
+      color: var(--saffron)
     }
 
     .tile span {
@@ -826,10 +826,10 @@
       position: relative;
       padding: 19px 58px 19px 20px;
       border: 1px solid var(--line);
-      border-left: 3px solid var(--sky);
+      border-left: 3px solid var(--marigold);
       border-radius: 10px;
       background: var(--paper);
-      box-shadow: 0 8px 24px #173d7314;
+      box-shadow: 0 8px 24px #782d1814;
       counter-increment: celebration
     }
 
@@ -845,7 +845,7 @@
       border: 1px solid #b89a5b;
       border-radius: 50%;
       background: var(--cream);
-      color: var(--royal);
+      color: var(--saffron);
       font: 500 9px "Montserrat", Arial, sans-serif;
       letter-spacing: .3px
     }
@@ -893,7 +893,7 @@
 
     .function-title {
       margin: 0;
-      color: var(--royal);
+      color: var(--saffron);
       font: 600 23px/1.5 "Nirmala UI", "Noto Serif Devanagari", serif
     }
 
@@ -912,7 +912,7 @@
 
     .invitation-close {
       position: relative;
-      background: radial-gradient(ellipse at 10% 12%, #72b5ff 0, transparent 38%), linear-gradient(155deg, #245d9c, #102746);
+      background: radial-gradient(ellipse at 10% 12%, #ffd18a 0, transparent 38%), linear-gradient(155deg, #c96320, #782d18);
       color: var(--cream)
     }
 
@@ -948,7 +948,7 @@
 
     .closing-card h3 {
       margin: 0 0 8px;
-      color: var(--royal);
+      color: var(--saffron);
       font: 500 28px/1.2 "Cormorant Garamond", Georgia, serif
     }
 
@@ -985,19 +985,19 @@
       display: grid;
       gap: 9px;
       margin-top: 21px;
-      color: var(--royal);
+      color: var(--saffron);
       font: 500 13px/1.7 "Cormorant Garamond", Georgia, serif
     }
 
     .closing-families span {
-      color: #5b6e88;
+      color: #8a604a;
       font: italic 15px "Cormorant Garamond", Georgia, serif
     }
 
     .closing-names {
       display: block;
       margin-top: 18px;
-      color: var(--royal);
+      color: var(--saffron);
       font-size: 38px;
       line-height: 1
     }
@@ -1011,7 +1011,7 @@
     .invitation-close .rsvp-card {
       width: min(100%, 520px);
       margin-top: 26px;
-      background: linear-gradient(155deg, #3278b8, #1b4c82 65%, #102d54);
+      background: linear-gradient(155deg, #e27a2d, #b84d19 65%, #782d18);
       box-shadow: 0 16px 42px #290b1833
     }
 
@@ -1034,14 +1034,14 @@
 
     .unit b {
       display: block;
-      color: var(--royal);
+      color: var(--saffron);
       font-size: 25px;
       font-weight: 400
     }
 
     .unit small {
       font: 500 8px "Montserrat", Arial, sans-serif;
-      color: #5b6e88;
+      color: #8a604a;
       text-transform: uppercase
     }
 
@@ -1092,7 +1092,7 @@
 
     .choice.selected {
       background: #e8c77a;
-      color: #17304f
+      color: #63331c
     }
 
     .fields {
@@ -1121,7 +1121,7 @@
       border: 1px solid #b89a5b;
       border-radius: 8px;
       background: #fffaf0;
-      color: #17304f;
+      color: #63331c;
       font-size: 14px
     }
 
@@ -1150,7 +1150,7 @@
       height: 48px;
       border-radius: 50%;
       background: #e8c77a;
-      color: #17304f;
+      color: #63331c;
       display: grid;
       place-items: center;
       margin: auto;
@@ -1246,7 +1246,7 @@
       top: -24px;
       color: var(--petal-color, #e8c77a);
       opacity: 0;
-      text-shadow: 0 1px 5px #10274655;
+      text-shadow: 0 1px 5px #782d1855;
       animation: petal-fall var(--fall-duration, 9s) linear forwards
     }
 
@@ -1624,7 +1624,7 @@
           petal.style.fontSize = 14 + Math.random() * 12 + "px";
           petal.style.setProperty("--drift", `${Math.random() * 100 - 50}px`);
           petal.style.setProperty("--fall-duration", `${duration}s`);
-          petal.style.setProperty("--petal-color", Math.random() > .5 ? "#ffd76a" : "#a8d1ff");
+          petal.style.setProperty("--petal-color", Math.random() > .5 ? "#ffdf78" : "#ffb25c");
           document.body.appendChild(petal);
           setTimeout(() => petal.remove(), duration * 1000 + 300);
         }, 650);
