@@ -1546,7 +1546,8 @@
           <div class="fields identity-fields"><label>Your name<input id="guestName" type="text" autocomplete="name"
                 maxlength="80" placeholder="Enter your name" required></label><label>Mobile number (optional)<input
                 id="guestPhone" type="tel" autocomplete="tel" inputmode="tel" maxlength="20"
-                placeholder="For RSVP follow-up"></label></div>
+                placeholder="For RSVP follow-up"></label><label>Your place, city or town<input id="guestPlace" type="text"
+                autocomplete="address-level2" maxlength="100" placeholder="Enter your city or town" required></label></div>
           <div id="extraFields"></div><button class="btn submit" id="submitRsvp" type="submit" disabled>Submit RSVP
             →</button>
           <p class="note">RSVP email works when this invitation is opened from its website, not as a downloaded HTML file. The first submission may require confirming an activation email sent to the hosts.</p>
@@ -1586,18 +1587,18 @@
       }
       tick(); setInterval(tick, 1000);
       let choice = "";
-      document.querySelectorAll("[data-choice]").forEach(btn => btn.addEventListener("click", () => { choice = btn.dataset.choice; document.querySelectorAll("[data-choice]").forEach(b => b.classList.toggle("selected", b === btn)); $("submitRsvp").disabled = false; $("extraFields").innerHTML = choice === "accept" ? `<div class="fields"><label>Number of guests<select id="guests"><option>1</option><option>2</option><option>3</option><option>4</option></select></label><label>Drop a song request for the playlist!<input id="song" type="text" maxlength="90" placeholder="Your favourite celebration song"></label></div>` : `<p class="rsvp-copy">We'll miss you and will celebrate with you in spirit.</p>`; }));
+      document.querySelectorAll("[data-choice]").forEach(btn => btn.addEventListener("click", () => { choice = btn.dataset.choice; document.querySelectorAll("[data-choice]").forEach(b => b.classList.toggle("selected", b === btn)); $("submitRsvp").disabled = false; $("extraFields").innerHTML = choice === "accept" ? `<div class="fields"><label>Drop a song request for the playlist!<input id="song" type="text" maxlength="90" placeholder="Your favourite celebration song"></label></div>` : `<p class="rsvp-copy">We'll miss you and will celebrate with you in spirit.</p>`; }));
       $("rsvpForm").addEventListener("submit", async e => {
         e.preventDefault(); if (!choice) return;
-        const name = $("guestName").value.trim(), phone = $("guestPhone").value.trim();
+        const name = $("guestName").value.trim(), phone = $("guestPhone").value.trim(), place = $("guestPlace").value.trim();
         if (!name) { $("guestName").focus(); return; }
         const note = document.querySelector(".rsvp-card .note");
         if (location.protocol === "file:") {
           note.textContent = "This invitation is open as a local file, so RSVP email cannot be sent yet. Please open it from its hosted website. The first online submission may require confirming an activation email sent to the hosts.";
           return;
         }
-        const guests = $("guests")?.value || "0", song = $("song")?.value.trim() || "";
-        const payload = { name, phone: phone || "Not provided", response: choice === "accept" ? "Joyfully Accept" : "Regretfully Decline", guest_count: choice === "accept" ? guests : "0", song_request: song || "None", event: "Govind & Taru Wedding Celebrations — 23–26 November 2026", venue: "Beelkho, Bhopal, Madhya Pradesh", _subject: "New RSVP — Govind & Taru Wedding", _template: "table", _captcha: "false" };
+        const song = $("song")?.value.trim() || "";
+        const payload = { name, phone: phone || "Not provided", place, response: choice === "accept" ? "Joyfully Accept" : "Regretfully Decline", song_request: song || "None", event: "Govind & Taru Wedding Celebrations — 23–26 November 2026", venue: "Beelkho, Bhopal, Madhya Pradesh", _subject: "New RSVP — Govind & Taru Wedding", _template: "table", _captcha: "false" };
         const submit = $("submitRsvp"); submit.disabled = true; submit.textContent = "Sending…";
         const controller = new AbortController();
         const timeout = setTimeout(() => controller.abort(), 90000);
