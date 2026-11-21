@@ -1587,7 +1587,7 @@
       }
       tick(); setInterval(tick, 1000);
       let choice = "";
-      document.querySelectorAll("[data-choice]").forEach(btn => btn.addEventListener("click", () => { choice = btn.dataset.choice; document.querySelectorAll("[data-choice]").forEach(b => b.classList.toggle("selected", b === btn)); $("submitRsvp").disabled = false; $("extraFields").innerHTML = choice === "accept" ? `<div class="fields"><label>Drop a song request for the playlist!<input id="song" type="text" maxlength="90" placeholder="Your favourite celebration song"></label></div>` : `<p class="rsvp-copy">We'll miss you and will celebrate with you in spirit.</p>`; }));
+      document.querySelectorAll("[data-choice]").forEach(btn => btn.addEventListener("click", () => { choice = btn.dataset.choice; document.querySelectorAll("[data-choice]").forEach(b => b.classList.toggle("selected", b === btn)); $("submitRsvp").disabled = false; $("extraFields").innerHTML = choice === "accept" ? `<div class="fields"><label>Song request (optional)<input id="song" type="text" maxlength="90" placeholder="Your favourite celebration song (optional)"></label></div>` : `<p class="rsvp-copy">We'll miss you and will celebrate with you in spirit.</p>`; }));
       $("rsvpForm").addEventListener("submit", async e => {
         e.preventDefault(); if (!choice) return;
         const name = $("guestName").value.trim(), phone = $("guestPhone").value.trim(), place = $("guestPlace").value.trim();
